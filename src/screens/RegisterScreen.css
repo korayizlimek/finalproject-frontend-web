@@ -1,0 +1,86 @@
+.register {
+    /* background-color: white; */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.register_top {
+    display: flex;
+    align-items: center;
+    color: #603670;
+}
+
+.register__logo {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    object-fit: contain;
+    width: 100px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.register__container {
+    background-color: white;
+    margin-top: 50px;
+    width: 300px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    padding: 20px;
+}
+
+.register__container > h1 {
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.register__container > form > div {
+    margin-bottom: 5px;
+}
+
+.register__container > form > div > input {
+    height: 30px;
+    margin-bottom: 10px;
+    background-color: white;
+    width: 98%;
+}
+
+.register__container > p {
+    margin-top: 15px;
+    font-size: 12px;
+}
+
+.register__signInButton {
+    border-radius: 2px;
+    width: 100%;
+    border: 1px solid black;
+    height: 30px;
+    margin-top: 10px;
+    color: #603670;
+    border-color: darkgray;
+}
+
+.register__registerButton {
+    border-radius: 2px;
+    width: 100%;
+    border: 1px solid black;
+    height: 30px;
+    margin-top: 10px;
+    color: #603670;
+    border-color: darkgray;
+}
+
+.register__registerButton:hover {
+    border: 2px solid black;
+    /* background-color: #171717;
+    color: #f4f4f4; */
+}
+
+.register__signInButton:hover {
+    background-color: #171717;
+    color: #f4f4f4;
+}

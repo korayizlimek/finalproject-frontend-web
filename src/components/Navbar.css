@@ -1,0 +1,130 @@
+.navbar {
+    width: 100%;
+    height: 70px;
+    background-color: #171717;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 1rem;
+    z-index: 50;
+    position: sticky;
+    top: 0;
+}
+
+.navbar__title {
+    display: flex;
+    align-items: center;
+}
+
+.header__logo {
+    height: 60px;
+    width: 60px;
+    object-fit: contain;
+    margin-left: 20px;
+}
+
+.navbar__title h3 {
+    /* color: #f4f4f4; */
+    color: #cbb26a;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.navbar__links {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.navbar__links > li {
+    padding-left: 1.5rem;
+}
+
+.navbar__links > li > a {
+    text-decoration: none;
+    color: #f4f4f4;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+}
+
+.cart__link {
+    text-decoration: none;
+    color: #f4f4f4;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+}
+
+.navbar__links > li > a > span {
+    display: flex;
+    align-items: center;
+    margin-left: 8px;
+}
+
+.navbar__links > li > a > i {
+    margin-right: 5px;
+}
+
+.cart__link {
+    /* background: #333; */
+    padding: 10px;
+    border-radius: 8px;
+    height: 40px;
+}
+
+.cart__link:hover {
+    background: #cbb26a;
+    /* background: #dd219e; */
+    color: #f4f4f4;
+}
+
+.cartlogo__badge {
+    width: 30px;
+    height: 30px;
+    background-color: #f4f4f4;
+    color: #171717;
+    border-radius: 50%;
+    margin-left: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.hamburger__menu {
+    width: 30px;
+    height: 30px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.hamburger__menu > div {
+    width: 100%;
+    background: #f4f4f4;
+    height: 3px;
+}
+
+.hamburger__menu:hover > div {
+    background: #dd219e;
+}
+
+@media (max-width: 960px) {
+    .navbar__links {
+        display: none;
+    }
+
+    .hamburger__menu {
+        display: flex;
+    }
+}
+
+@media (max-width: 500px) {
+    .navbar__logo h2 {
+        font-size: 1rem;
+    }
+}
